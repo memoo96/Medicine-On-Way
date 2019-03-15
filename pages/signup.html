@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css"  href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" type="text/css"  href="../css/style.css" />  
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top wow bounceInRight">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Medicine On Way</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                            <div class="row" >
+                                <div class="col-md-12">
+                                    Login via
+                                    <!--  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav"> -->
+                                        <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                        </div>
+                                        <div class="form-group">
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                        </div>
+                                        <div class="form-group">
+                                        <button type="submit" onclick="signIn(exampleInputEmail2,exampleInputPassword2)" class="btn btn-success btn-block">Sign in</button>
+                                        </div>
+                                        <div class="checkbox">
+                                        <label>
+                                        <input type="checkbox"> keep me logged-in
+                                        </label>
+                                        </div>
+                                    <!--  </form> -->
+                                    or
+                                    <div class="social-buttons">
+                                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-gp"><i class="fa fa-google-plus"></i> Google +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control search_btn" placeholder="Search">
+                        </div>
+                        <a href="search.html" class="btn btn-primary btn-small active go_btn" role="button" aria-pressed="true">Go</a>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a id="Profile_link" href="#">Profile</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+            </nav>
+    
+
+            <div id="signupbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-info wow bounceInLeft">
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign Up</div>
+                    </div>  
+                    <div class="panel-body" >
+                        <div id="signupform"  class="form-horizontal">
+                        <!--  <form id="signupform" class="form-horizontal" role="form"> -->
+
+                            <div class="alert alert-danger" id="error" role="alert" style="display: none;">
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                                
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                </div>
+                            </div>
+                    
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" name="re_password" placeholder="Re-password" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" name="mobile" placeholder="Mobile" required>
+                                    </div>
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" name="address" placeholder="Address" required>
+                                    </div>
+                            </div>
+
+                            <div class="form-group"> 
+                                    <div class="col-md-12">  
+                                        <select class="form-control" id="mySelect">
+                                            <option value="Pharmacy">Pharmacy</option>
+                                            <option value="Factory">Factory</option>
+                                            <option value="Medicine distribution Company">Medicine distribution Company</option>
+                                            <option value="Store">Store</option>
+                                        </select>
+                                    </div>    
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label>Upload profile picture</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>    
+                            </div>
+
+                            <div class="form-group">
+                                    <div class="col-md-12">
+                                        <details>
+                                            <summary>Upload Document</summary>
+                                            <p>Add an Offecial Doument that proves, that your organization is authorized by the goverment, the doument should e formated as a valid image format</p>
+                                        </details>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>    
+                            </div>
+
+                            <div class="form-group">                                      
+                                <div class="col-md-12">
+                                    <button id="get_location" type="submit" class="btn btn-primary btn-small"> <i class="glyphicon glyphicon-map-marker"></i> Get Location</button> 
+                                </div>
+                            </div>
+                        
+                            <div class="form-group">                                      
+                                <div class="col-md-12">
+                                    <button id="btn-signup" type="submit" onclick="signUp(email,password,mobile,address,name,mySelect,exampleFormControlFile1)" class="btn btn-success btn-lg btn-block"> Sign Up</button> 
+                                </div>
+                            </div>
+                            <span class="or_span">or</span>  
+                            <div class="face_google" class="form-group">
+                                <div class="col-md-6 col-xs-6">
+                                    <a href="#" class="btn btn-fb btn-block"><i class="fa fa-facebook"></i> Facebook</a>
+                                </div> 
+                                <div class="col-md-6 col-xs-6">
+                                    <a href="#" class="btn btn-gp btn-block"><i class="fa fa-google-plus"></i> Google +</a>  
+                                </div>                                              
+                            </div>  
+                        </div>     
+                        <!--   </form> -->
+                        </div>
+                </div>                
+        </div>
+
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/wow.min.js"></script>
+                    <script>
+                    new WOW().init();
+                    </script>
+        <script src="../js/script.js"></script>   
+
+</body>
+</html>

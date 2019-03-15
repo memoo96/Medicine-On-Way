@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css" />
+    <link rel="stylesheet" type="text/css"  href="../css/hover.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="./js/session.js"></script>
+    <script src="./js/auth.js"></script>
+</head>
+<body>
+     <!-- Start Navbar -->  
+     <nav class="navbar navbar-default navbar-fixed-top wow bounceInRight">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#our_navabr" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Medicine On Way</a>
+              </div>
+              <div class="collapse navbar-collapse" id="our_navabr">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <ul id="login-dp" class="dropdown-menu">
+                      <li>
+                        <div class="row" >
+                            <div class="col-md-12">
+                               Login via
+                             <!--  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav"> -->
+    
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                  </div>
+    
+                                  <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox"> keep me logged-in
+                                    </label>
+                                  </div>
+                                  
+                             <!--  </form> -->
+                              or
+                              <div class="social-buttons">
+                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-gp"><i class="fa fa-google-plus"></i> Google +</a>
+                              </div>
+                            </div>
+                            <div class="bottom text-center">
+                              New here ? <a href="signup.html"><b>Join Us</b></a>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input type="text" class="form-control search_btn" placeholder="Search">
+                  </div>
+                  <a href="#" class="btn btn-primary btn-small active go_btn" role="button" aria-pressed="true">Go</a>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a id="Profile_link" href="#">Profile</a></li>
+                  <li><a href="#service">Service</a></li>
+                  <li><a href="#product">Product</a></li>
+                  <li><a href="#price">Price</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+          
+           <!-- Start price -->
+      <section id="price" class="price text-center">
+            <div class="container">
+              <h1>Medicine prices</h1>
+              <div class="row">
+
+                  <div class="col-lg-offset-3 col-sm-6 col-xs-12">
+                    <div class="price-box">
+                      <h2 class="text-primary">Drug #1</h2>
+                      <p class="center-block">$40</p>
+                      <ul class="list-unstyled">
+                        <li>Side Effects: none</li>
+                        <li>Quantaty: 20</li>
+                        <li>Per unit: $0.43</li>
+                      </ul>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- End price -->
+    
+
+          <script src="../js/jquery-3.3.1.min.js"></script>
+         <script src="../js/bootstrap.min.js"></script>
+         <script src="../js/wow.min.js"></script>
+                   <script>
+                   new WOW().init();
+                   </script>
+         <script src="../js/script.js"></script>   
+    
+</body>
+</html>  
